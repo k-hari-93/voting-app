@@ -1,0 +1,10 @@
+services:
+  voting-app:
+    image: voting-app
+    ports:
+      - "9876:5000"
+    networks:
+      - back-end
+
+networks:
+  back-end: {}
